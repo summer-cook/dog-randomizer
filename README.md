@@ -1,10 +1,8 @@
-To Do
+<b>Dog Randomizer!</b>
+<u>By: Summer & Sami</u>
 
-- needs to start on a picture
-- button onclick needs to be the image
-- need to create 9 components, one for each dog
-- CSS
 
+External API Used https://dog.ceo/api
 
 lists all breeds:
 https://dog.ceo/api/breeds/list/all
