@@ -3,6 +3,14 @@ import DogPic from './components/DogPic';
 import dogs from './dogArray.js';
 import dogsArray from './dogArray2.js';
 import './App.css'
+import Home from './components/Home'
+import AboutUs from './components/AboutUs'
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom'
 
 class App extends Component {
   constructor(props) {
@@ -45,6 +53,14 @@ dogMap = (arr) => {
     // })
     
     return (
+
+      <React.Fragment>
+        
+        <Router>
+          <Switch>
+            <Route exact path="/" component={ Home } />
+            <Route path="/aboutus" component={ AboutUs } />
+            <Route path="/dogs" >            
 
       <div className= "page-container">
         <div className= "header-text">
@@ -111,6 +127,13 @@ dogMap = (arr) => {
       />
       </div> */}
       </div>
+
+          </Route>
+          
+          </Switch>
+        </Router>
+
+      </React.Fragment>
     )
   }
 }
